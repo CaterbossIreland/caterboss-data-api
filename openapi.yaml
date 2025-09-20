@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info: {title: Caterboss Data API, version: '1.0.0'}
+servers: [{url: https://YOUR-API-URL}]
+paths:
+  /run:
+    post:
+      operationId: runNamed
+      security: [{bearerAuth: []}]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {name: {type: string}, params: {type: object}}
+      responses: {'200': {description: OK}}
+components:
+  securitySchemes: {bearerAuth: {type: http, scheme: bearer}}

@@ -1,0 +1,1 @@
+-- paste the full SQL from ChatGPT message here and replace yourproject/core/analytics_XXXX
